@@ -17,6 +17,8 @@
 			$urlDef = $rutaf."/";
 			$guarda = move_uploaded_file($temporal, $urlDef.$imgOriginal);//$guarda true si guardo la factura en la carpeta recien creada
 
+			echo $urlDef.$imgOriginal." |-|-|-|"
+
 
 				if ($guarda) { //si guarda la imagen en la carpeta
 					
