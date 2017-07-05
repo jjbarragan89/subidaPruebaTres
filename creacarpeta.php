@@ -24,6 +24,8 @@
 		$directorio[0]=$dir;
 		$directorio[1]= $destino;
 		//return $directorio;
+		$dir = scandir($_SERVER['DOCUMENT_ROOT'].dirname($_SERVER['REQUEST_URI']));
+		var_dump($dir);
 
 		?>
 			<!DOCTYPE HTML>
