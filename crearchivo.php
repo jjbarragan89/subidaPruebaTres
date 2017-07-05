@@ -19,6 +19,12 @@
 
 			echo $urlDef.$imgOriginal." |-|-|-|";
 
+			if($temporal){
+				echo "Copia temporal";
+			}else{
+				echo "No hay copia temporal";
+			}
+
 
 				if ($guarda) { //si guarda la imagen en la carpeta
 					
