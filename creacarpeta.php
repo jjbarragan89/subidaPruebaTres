@@ -33,7 +33,7 @@
 			    <BODY>
 			    	<form action="crearchivo.php" method="post" enctype="multipart/form-data">
 				    	<input type="file" name="miarchivo">
-				    	<input type="hidden" name="ruta" value="<?php echo $directorio[0];  ?>">
+				    	<input type="hidden" name="ruta" value="<?php echo $directorio[1];  ?>">
 				    	<input type="submit" value="Subir archivo a carpeta">
 				    </form>	
 			    </BODY>
