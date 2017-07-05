@@ -10,7 +10,7 @@
 
 	function recibenombre($nombreca){
 
-		$destino=$_SERVER['DOCUMENT_ROOT'].dirname($_SERVER['REQUEST_URI'])."/".$nombreca;
+		$destino=$_SERVER['DOCUMENT_ROOT'].dirname($_SERVER['REQUEST_URI']).$nombreca;
 		$directorio=array();
 		//var_dump($destino);
 		//echo getcwd();
