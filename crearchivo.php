@@ -17,7 +17,7 @@
 			$urlDef = $rutaf."/";
 			$guarda = move_uploaded_file($temporal, $urlDef.$imgOriginal);//$guarda true si guardo la factura en la carpeta recien creada
 
-			$dir = scandir($_SERVER['DOCUMENT_ROOT'].dirname($_SERVER['REQUEST_URI']).'/jsonjson');
+			$dir = scandir($urlDef);
 			var_dump($dir);
 
 
