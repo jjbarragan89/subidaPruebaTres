@@ -14,16 +14,19 @@
 		if($imgOriginal){
 
 			$temporal = $_FILES["miarchivo"]["tmp_name"];
-			//$urlDef = $rutaf."/";
-			$guarda = move_uploaded_file($temporal, $rutaf."/".$imgOriginal);//$guarda true si guardo la factura en la carpeta recien creada
+			$urlDef = $rutaf."/";
+			$guarda = move_uploaded_file($temporal, $urlDef.$imgOriginal);//$guarda true si guardo la factura en la carpeta recien creada
 
-			echo $urlDef.$imgOriginal." |-|-|-|";
-
-			if($temporal){
-				echo "Copia temporal";
-			}else{
-				echo "No hay copia temporal";
+			if(file_exists($temporal))
+			{
+			   echo "El archivo ha sido cargadao al servidor";
 			}
+			else
+			{
+			   echo "El archivo no se ha cargado al servidor";
+
+			}
+
 
 
 				if ($guarda) { //si guarda la imagen en la carpeta
