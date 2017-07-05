@@ -14,8 +14,8 @@
 		if($imgOriginal){
 
 			$temporal = $_FILES["miarchivo"]["tmp_name"];
-			$urlDef = $rutaf."/";
-			$guarda = move_uploaded_file($temporal, $urlDef.$imgOriginal);//$guarda true si guardo la factura en la carpeta recien creada
+			//$urlDef = $rutaf."/";
+			$guarda = move_uploaded_file($temporal, $rutaf."/".$imgOriginal);//$guarda true si guardo la factura en la carpeta recien creada
 
 			echo $urlDef.$imgOriginal." |-|-|-|";
 
