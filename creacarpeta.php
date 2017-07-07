@@ -27,7 +27,7 @@
 		$dir = scandir($_SERVER['DOCUMENT_ROOT'].dirname($_SERVER['REQUEST_URI']));
 		var_dump($dir);
 
-		echo $dir." dir:";
+		echo $destino." dir:";
 
 		?>
 			<!DOCTYPE HTML>
